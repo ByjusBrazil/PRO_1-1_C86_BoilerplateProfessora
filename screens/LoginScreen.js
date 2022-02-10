@@ -1,9 +1,18 @@
 import React, { Component } from "react";
-import { StyleSheet, View, Button } from "react-native";
+import {
+  View,
+  Text,
+  StyleSheet,
+  SafeAreaView,
+  Platform,
+  StatusBar,
+  Image
+} from "react-native";
 import * as Google from "expo-google-app-auth";
 import firebase from "firebase";
 
 import AppLoading from "expo-app-loading";
+import { RFValue } from "react-native-responsive-fontsize";
 import * as Font from "expo-font";
 
 let customFonts = {

@@ -5,7 +5,13 @@
     "android": "expo start --android",
     "ios": "expo start --ios",
     "web": "expo start --web",
-    "eject": "expo eject"
+    "eject": "expo eject",
+    "build": "npm build",
+    "clean": "rmdir /s /q node_modules", 
+    "clean2": "rmdir /s /q .expo", 
+    "clean3": "del package-lock.json", 
+    "reinstall": "npm run clean && npm run clean2 && npm run clean3 && npm install", 
+    "rebuild": "npm run clean && npm run clean2 && npm run clean3 && npm install && expo start -c -a"
   },
   "dependencies": {
     "@react-native-community/masked-view": "0.1.10",
@@ -27,7 +33,6 @@
     "react-native-dropdown-picker": "^4.0.4",
     "react-native-gesture-handler": "~1.8.0",
     "react-native-paper": "^4.7.2",
-    "react-native-reanimated": "~1.13.0",
     "react-native-responsive-fontsize": "^0.5.0",
     "react-native-safe-area-context": "3.1.9",
     "react-native-screens": "~2.15.2",
